@@ -1,0 +1,15 @@
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form method="POST" action="http://localhost/laravel/public/index">
+        {{csrf_field()}}
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="text" id="name" name="Department[name]">
+            <input type="text" id="description" name="Department[description]">
+            
+            <input type="submit">
+        </form>
+    </body>
+</html>
